@@ -10,17 +10,16 @@
 
     <div id="page-wrapper">
         <div id="game-header">X Player's Turn</div>
-        <div id="game-display">
-            <!-- <div class="game-space"></div>
-            <div class="game-space"></div>
-            <div class="game-space"></div>
-            <div class="game-space"></div>
-            <div class="game-space"></div>
-            <div class="game-space"></div>
-            <div class="game-space"></div>
-            <div class="game-space"></div>
-            <div class="game-space"></div> -->
+        <div id="game-prompt">
+            <label class="name-label">X Player's Name</label>
+            <input id="x-player" class="name-input" type="text">
+            <label class="name-label">O Player's Name</label>
+            <input id="o-player" class="name-input" type="text">
+            <button id="start-btn" onclick=startGame()>Start</button>
         </div>
+        <div id="game-display">
+        </div>
+        <button id="restart-btn" onclick=restartGame()>Restart</button>
     </div>
     <script src="javascript.js"></script>
 </body>
